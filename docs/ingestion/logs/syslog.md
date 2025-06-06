@@ -25,6 +25,12 @@ You can change the default port number using the following environment variables
 * `ZO_TCP_PORT` - TCP port number to listen on. Default: `5514`
 * `ZO_UDP_PORT` - UDP port number to listen on. Default: `5514`
 
+You can also configure the TLS settings for syslog TCP server using the following environment variables:
+* `ZO_TCP_TLS_ENABLED` - Enable TLS for TCP syslog server. If enabled, `ZO_TCP_PORT` will be used for the TLS connection over TCP. Default: `false`
+* `ZO_TCP_TLS_CERT_PATH` - Path to the TLS certificate file to be used on the server.
+* `ZO_TCP_TLS_KEY_PATH` - Path to the TLS key file to be used on the server.
+* `ZO_TCP_TLS_CA_CERT_PATH` - Path to the TLS CA certificate file to be used on the server.
+
 
 ## Testing
 
